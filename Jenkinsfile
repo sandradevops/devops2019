@@ -9,8 +9,20 @@ mkdir Jenkins'''
     }
 
     stage('Test') {
-      steps {
-        echo 'test pass'
+      parallel {
+        stage('Test') {
+          steps {
+            echo 'test pass'
+          }
+        }
+
+        stage('Integration') {
+          steps {
+            sh '''ls
+mkdir integration test'''
+          }
+        }
+
       }
     }
 
