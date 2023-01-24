@@ -23,6 +23,12 @@ mkdir integration test'''
           }
         }
 
+        stage('Fontionnel') {
+          steps {
+            echo 'test ok'
+          }
+        }
+
       }
     }
 
