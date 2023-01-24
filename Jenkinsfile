@@ -8,5 +8,11 @@ mkdir Jenkins'''
       }
     }
 
+    stage('Test') {
+      steps {
+        echo 'test pass'
+      }
+    }
+
   }
 }
