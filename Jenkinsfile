@@ -32,5 +32,11 @@ mkdir integration test'''
       }
     }
 
+    stage('Deployment') {
+      steps {
+        sh 'ls '
+      }
+    }
+
   }
 }
